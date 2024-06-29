@@ -11,6 +11,9 @@
 		164FA10B2C3089A3008F77DB /* LoggingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164FA1002C3089A3008F77DB /* LoggingKit.framework */; };
 		164FA1102C3089A3008F77DB /* LoggingKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FA10F2C3089A3008F77DB /* LoggingKitTests.swift */; };
 		164FA1112C3089A3008F77DB /* LoggingKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 164FA1032C3089A3008F77DB /* LoggingKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		164FA11B2C3089C0008F77DB /* LogCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FA11A2C3089C0008F77DB /* LogCategory.swift */; };
+		164FA11D2C3089DB008F77DB /* LogConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FA11C2C3089DB008F77DB /* LogConfiguration.swift */; };
+		164FA11F2C3089FF008F77DB /* LogKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 164FA11E2C3089FF008F77DB /* LogKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		164FA1042C3089A3008F77DB /* LoggingKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LoggingKit.docc; sourceTree = "<group>"; };
 		164FA10A2C3089A3008F77DB /* LoggingKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoggingKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		164FA10F2C3089A3008F77DB /* LoggingKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingKitTests.swift; sourceTree = "<group>"; };
+		164FA11A2C3089C0008F77DB /* LogCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCategory.swift; sourceTree = "<group>"; };
+		164FA11C2C3089DB008F77DB /* LogConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogConfiguration.swift; sourceTree = "<group>"; };
+		164FA11E2C3089FF008F77DB /* LogKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				164FA1032C3089A3008F77DB /* LoggingKit.h */,
 				164FA1042C3089A3008F77DB /* LoggingKit.docc */,
+				164FA11A2C3089C0008F77DB /* LogCategory.swift */,
+				164FA11C2C3089DB008F77DB /* LogConfiguration.swift */,
+				164FA11E2C3089FF008F77DB /* LogKit.swift */,
 			);
 			path = LoggingKit;
 			sourceTree = "<group>";
@@ -194,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164FA11B2C3089C0008F77DB /* LogCategory.swift in Sources */,
+				164FA11D2C3089DB008F77DB /* LogConfiguration.swift in Sources */,
+				164FA11F2C3089FF008F77DB /* LogKit.swift in Sources */,
 				164FA1052C3089A3008F77DB /* LoggingKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,9 +380,11 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = jacobbrewerapps.LoggingKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -410,9 +424,11 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = jacobbrewerapps.LoggingKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
